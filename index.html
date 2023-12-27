@@ -17,15 +17,17 @@
         }
 
         .flash-container {
-            width: 300px; /* Adjust the container width as needed */
-            height: 200px; /* Adjust the container height as needed */
+            width: 100%; /* Adjust the container width to fill the whole screen */
+            height: 0; /* Set initial height to 0 to maintain aspect ratio */
+            padding-top: 66.66%; /* Set the padding to maintain the aspect ratio (2:3 in this case) */
             margin: 0 auto;
             overflow: hidden; /* Ensure that the container doesn't show both images */
         }
 
         .flash-image {
             width: 100%; /* Make sure the image takes up the entire container */
-            height: auto;
+            height: 100%;
+            object-fit: cover; /* Ensure that the image covers the entire container */
             animation: invert 2s infinite; /* Adjust the duration for the speed of inversion */
         }
     </style>
