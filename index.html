@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
         @keyframes invert {
             0% {
                 filter: invert(0);
@@ -16,26 +23,16 @@
             }
         }
 
-        .flash-container {
-            width: 100%; /* Adjust the container width to fill the whole screen */
-            height: 0; /* Set initial height to 0 to maintain aspect ratio */
-            padding-top: 66.66%; /* Set the padding to maintain the aspect ratio (2:3 in this case) */
-            margin: 0 auto;
-            overflow: hidden; /* Ensure that the container doesn't show both images */
-        }
-
         .flash-image {
-            width: 100%; /* Make sure the image takes up the entire container */
-            height: 100%;
-            object-fit: cover; /* Ensure that the image covers the entire container */
-            animation: invert 2s infinite; /* Adjust the duration for the speed of inversion */
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            animation: invert 2s infinite;
         }
     </style>
     <title>Inverting Image</title>
 </head>
 <body>
-    <div class="flash-container">
-        <img class="flash-image" src="https://github.com/Darkloyd256/asset-host/blob/70dfb3c7f705f6881c88614244b4ecd6ab8357ba/Mrom.z64.png?raw=true">
-    </div>
+    <img class="flash-image" src="https://github.com/Darkloyd256/asset-host/blob/70dfb3c7f705f6881c88614244b4ecd6ab8357ba/Mrom.z64.png?raw=true">
 </body>
 </html>
