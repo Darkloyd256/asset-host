@@ -26,8 +26,8 @@
             animation: flash 2s infinite; /* Adjust the duration as needed for rapid flashing */
         }
 
-        .flash-image:nth-child(2) {
-            animation-delay: 1s; /* Delay the start of the second image */
+        .flash-container:hover .flash-image:nth-child(2) {
+            animation-delay: -1s; /* Correct the delay for the second image */
         }
     </style>
     <title>Rapid Flashing Images</title>
