@@ -1,11 +1,37 @@
-<html>
-<script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @keyframes flash {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
 
-</script>
-<style>
+        .flash-container {
+            display: flex;
+            justify-content: space-between;
+            width: 300px; /* Adjust the container width as needed */
+            margin: 0 auto;
+        }
 
-</style>
+        .flash-image {
+            width: 100px; /* Adjust the image width as needed */
+            height: auto;
+            animation: flash 4s infinite; /* Adjust the duration as needed */
+        }
+    </style>
+    <title>Flashing Images</title>
+</head>
 <body>
-<img src="https://github.com/Darkloyd256/asset-host/blob/main/Mrom.z64.png">
+    <div class="flash-container">
+        <img class="flash-image" src="https://example.com/path/to/image1.jpg" alt="Image 1">
+        <img class="flash-image" src="https://example.com/path/to/image2.jpg" alt="Image 2">
+    </div>
 </body>
 </html>
