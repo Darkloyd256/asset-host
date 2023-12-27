@@ -5,23 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         @keyframes flash {
-            0%, 100% {
+            0%, 50%, 100% {
                 opacity: 1;
             }
-            50% {
+            25%, 75% {
                 opacity: 0;
             }
         }
 
         .flash-container {
-            display: flex;
-            justify-content: space-between;
             width: 300px; /* Adjust the container width as needed */
+            height: 200px; /* Adjust the container height as needed */
             margin: 0 auto;
+            position: relative;
         }
 
         .flash-image {
-            width: 100px; /* Adjust the image width as needed */
+            position: absolute;
+            width: 100%; /* Make sure the image takes up the entire container */
             height: auto;
             animation: flash 4s infinite; /* Adjust the duration as needed */
         }
@@ -30,8 +31,8 @@
 </head>
 <body>
     <div class="flash-container">
-        <img class="flash-image" src="https://github.com/Darkloyd256/asset-host/blob/70dfb3c7f705f6881c88614244b4ecd6ab8357ba/Mrom.z64.png?raw=true" alt="Image 1">
-        <img class="flash-image" src="https://github.com/Darkloyd256/asset-host/blob/70dfb3c7f705f6881c88614244b4ecd6ab8357ba/inverted%20mrom.png?raw=true" alt="Image 2">
+        <img class="flash-image" src="https://github.com/Darkloyd256/asset-host/blob/70dfb3c7f705f6881c88614244b4ecd6ab8357ba/Mrom.z64.png?raw=true">
+        <img class="flash-image" src="https://github.com/Darkloyd256/asset-host/blob/70dfb3c7f705f6881c88614244b4ecd6ab8357ba/inverted%20mrom.png?raw=true">
     </div>
 </body>
 </html>
