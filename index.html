@@ -59,12 +59,15 @@
     <p>Click anywhere on the page to play the sound.</p>
 
     <script>
-        var audio = new Audio('https://audio.jukehost.co.uk/gdECwEcPU24pxQn5MvvZHFCvtJMFGsfl');
+       var audio = new Audio('https://audio.jukehost.co.uk/gdECwEcPU24pxQn5MvvZHFCvtJMFGsfl');
 
 // Add a click event listener to the entire document
-document.addEventListener('click', function() {
-    alert("FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US");
-    playSound();
+document.addEventListener('click', function(event) {
+    // Check if the click target is the document itself
+    if (event.target === document.documentElement) {
+        alert("FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US");
+        playSound();
+    }
 });
 
 function playSound() {
