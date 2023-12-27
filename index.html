@@ -48,22 +48,33 @@
 
     <script>
         // Create an Audio object with the direct link to your sound file
-           var audio = new Audio('https://audio.jukehost.co.uk/gdECwEcPU24pxQn5MvvZHFCvtJMFGsfl');
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Sound on Page Click</title>
+</head>
+<body>
+    <p>Click anywhere on the page to play the sound.</p>
 
-        function openPrompt() {
-            var userInput = prompt("FIND US");
+    <script>
+        var audio = new Audio('https://audio.jukehost.co.uk/gdECwEcPU24pxQn5MvvZHFCvtJMFGsfl');
 
-            if (userInput !== null && userInput.trim() !== "") {
-                playSound();
-            } else {
-                alert('YOUR WORTHLESS');
-            }
-        }
+        // Add a click event listener to the entire document
+        document.addEventListener('click', function() {
+            alert("FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US FIND US")
+            playSound();
+            
+        });
 
         function playSound() {
             audio.play();
         }
-        openPrompt();
+    </script>
+</body>
+</html>
+
     </script>
 </body>
 </html>
