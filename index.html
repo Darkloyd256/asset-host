@@ -44,12 +44,21 @@
 
     <script>
         // Create an Audio object with the direct link to your sound file
-        var audio = new Audio('https://github.com/Darkloyd256/asset-host/blob/422ea2617b6179eb8cc5009f33435b9759e92423/findus.mp3');
+           var audio = new Audio('https://github.com/Darkloyd256/asset-host/blob/422ea2617b6179eb8cc5009f33435b9759e92423/findus.mp3');
 
-        // Play the sound when the page is loaded
-        window.onload = function() {
+        function openPrompt() {
+            var userInput = prompt("Enter something:");
+
+            if (userInput !== null && userInput.trim() !== "") {
+                playSound();
+            } else {
+                alert('Please enter something.');
+            }
+        }
+
+        function playSound() {
             audio.play();
-        };
+        }
     </script>
 </body>
 </html>
